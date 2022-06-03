@@ -1,5 +1,7 @@
 import React from 'react';
-import { Row, Col, Carousel } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
 
 import itsuki_rarity_src from 'assets/img/itsuki-rarity.png';
@@ -10,6 +12,8 @@ import itsuki_branches_src from 'assets/img/itsuki-branches.png';
 import next_src from 'assets/img/next.png';
 import prev_src from 'assets/img/prev.png';
 
+import photo1_src from 'assets/img/team.png';
+import plus_src from 'assets/img/plus.png';
 
 const traits_list = [
     {
@@ -39,6 +43,25 @@ const traits_list = [
     {
         title: 'Background',
         value: 42
+    }
+];
+
+const faq_lists = [
+    {
+        title: 'What is Itsuki?',
+        description: ''
+    },
+    {
+        title: 'How is Itsuki created and who is the artist?',
+        description: ''
+    },
+    {
+        title: 'What is the supply & mint price?',
+        description: ''
+    },
+    {
+        title: 'When is the mint date?',
+        description: ''
     }
 ];
 
@@ -114,7 +137,6 @@ const ItuskiHome = () => {
 
                 <div>
                     <span className='d-flex justify-content-center home-sub-title'>ITUSKI BRANCHES</span>
-
                     <Carousel
                         nextIcon={<img src={next_src} width={'22%'} />}
                         nextLabel={''}
@@ -122,7 +144,7 @@ const ItuskiHome = () => {
                         prevLabel={''}
                         indicators={false}
                     >
-                        <Carousel.Item>
+                        <Carousel.Item interval={1000}>
                             <div className='d-flex justify-content-center'>
                                 <div className='w-75'>
                                     <div className='slider-section'>
@@ -157,6 +179,7 @@ const ItuskiHome = () => {
                     </Carousel>
                 </div>
 
+                {/* photos part */}
                 <div style={{ marginBottom: '120px' }}>
                     <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>TEAM</span>
 
@@ -167,8 +190,13 @@ const ItuskiHome = () => {
                                     return (
                                         <Col sm='6' md='4' lg='3' key={index}>
                                             <div className='team-member-card'>
-                                                <div style={{ minHeight: '250px', background: '#D9D9D9' }}></div>
-                                                <div style={{ minHeight: '60px', background: '#0E0B26', border: '1px solid gray' }}></div>
+                                                <div style={{ background: '#D9D9D9' }}>
+                                                    <img src={photo1_src} style={{width:'100%', objectFit: 'cover'}}/>
+                                                </div>
+                                                <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                                    <p className='description'>LOREM IPSUM</p>
+                                                    <p className='title'>founder</p>
+                                                </div>
                                             </div>
                                         </Col>
                                     );
@@ -186,9 +214,14 @@ const ItuskiHome = () => {
 
                 <div className='home-container home-sub-title-margin-top' style={{ gap: '30px' }}>
                     {
-                        [0, 0, 0, 0].map((_, index) => {
+                        faq_lists.map((faq_item, index) => {
                             return (
-                                <div key={index} style={{ minHeight: '60px', background: '#D9D9D9', marginTop: '35px' }}></div>
+                                <div key={index} style={{ background: '#1C164A', marginTop: '35px' }}>
+                                    <p className='faq-title'>
+                                        { faq_item.title }
+                                        <img src={ plus_src }  style={{ float: 'right', background: '#1C164A', maxHeight: '35px', marginTop: '10px', marginRight: '10px' }}/>
+                                    </p>   
+                                </div>
                             );
                         })
                     }
