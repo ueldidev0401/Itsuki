@@ -14,6 +14,8 @@ import prev_src from 'assets/img/prev.png';
 import team_src from 'assets/img/team.png';
 import discord_src from 'assets/img/discord.png';
 import twitter_src from 'assets/img/twitter.png';
+import LazyLoadingImage from 'components/Loading/LazyLoadingImage';
+
 
 const traits_list = [
     {
@@ -91,7 +93,7 @@ const ItuskiHome = () => {
                     </Col>
                     <Col sm='6'>
                         <div>
-                            <img src={rezzsha_src} alt='rezzsha' width={'100%'} />
+                            <LazyLoadingImage src={rezzsha_src} alt='rezzsha' />
                         </div>
                     </Col>
                 </Row>
@@ -99,7 +101,7 @@ const ItuskiHome = () => {
                 <span className='d-flex justify-content-center home-sub-title home-sub-title-margin-top'>ITSUKI RARITY</span>
 
                 <div className='home-gap'>
-                    <img src={itsuki_rarity_src} width={'100%'} />
+                    <LazyLoadingImage src={itsuki_rarity_src} alt='itsuki_rarity' />
                 </div>
             </div>
 
