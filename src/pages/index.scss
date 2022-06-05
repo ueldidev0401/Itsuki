@@ -100,12 +100,12 @@
 
     @media (max-width: 1920px) {
         font-size: 42px;
-        line-height: 63px;
+        line-height: 50px;
     }
 
     @media (max-width: 1600px) {
-        font-size: 38px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 42px;
     }
 
     @media (max-width: 992px) {
@@ -126,8 +126,8 @@
     letter-spacing: 1.5px;
 
     @media (max-width: 1920px) {
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 26px;
+        line-height: 38px;
     }
 
     @media (max-width: 1600px) {
@@ -403,6 +403,10 @@
         }
     }
 
+    .value-nature{
+        font-size: 20px!important;
+    }
+
     .slider-section-description {
         font-family: 'Amiko';
         font-size: 32px;
@@ -482,7 +486,7 @@
     }
 }
 .carousel-item {
-    transition-duration: 2s !important;
+    transition-duration: 1s !important;
 }
 
 .accordion-button.collapsed:after {
