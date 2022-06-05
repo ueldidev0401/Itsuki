@@ -71,7 +71,7 @@ const faq_lists = [
     },
     {
         title: 'When is the mint date?',
-        description: '26th July 2022'
+        description: '26th June 2022'
     }
 ];
 
