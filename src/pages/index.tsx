@@ -47,7 +47,7 @@ const traits_list = [
         value: 10
     },
     {
-        title: 'Jwellery',
+        title: 'Accessories',
         value: 52
     },
     {
@@ -71,7 +71,7 @@ const faq_lists = [
     },
     {
         title: 'When is the mint date?',
-        description: '26th June 2022'
+        description: '6th June 2022'
     }
 ];
 
@@ -289,7 +289,7 @@ const ItuskiHome = () => {
                                                 </div>
                                                 <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
                                                     <p className='description'>Shanu.eth</p>
-                                                    <p className='title'>Developer</p>
+                                                    <p className='title'>Smart Contract Developer</p>
                                                 </div>
                                             </div>
                             </Col>

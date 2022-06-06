@@ -399,12 +399,15 @@
         }
 
         @media (max-width: 380px) {
-            font-size: 18px;
+            font-size: 12.5px;
         }
     }
 
     .value-nature{
         font-size: 20px!important;
+        @media (max-width: 540px) {
+            font-size: 12px !important;
+        }
     }
 
     .slider-section-description {
@@ -436,7 +439,8 @@
         }
 
         @media (max-width: 540px) {
-            font-size: 16px;
+            font-size: 12px;
+            margin-top: 0rem !important;
         }
     }
 
@@ -482,6 +486,7 @@
         @media (max-width: 576px) {
             margin-top: 60px;
             padding: 15px;
+           
         }
     }
 }

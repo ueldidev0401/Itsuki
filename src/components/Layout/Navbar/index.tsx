@@ -28,13 +28,13 @@ const Navbar = () => {
                 ITUSKI BRANCHES
               </Link>
               <div style={{ width: '1rem' }} />
-              <Link to={routeNames.home} aria-current='page' className='custom-link-button custom-nav-link'>
+              <a target="_blank" href="https://discord.com/invite/itsuki" aria-current='page' className='custom-link-button custom-nav-link'>
                 <img src={discord_logo} />
-              </Link>
+              </a>
               <div style={{ width: '1rem' }} />
-              <Link to={routeNames.home} aria-current='page' className='custom-link-button custom-nav-link'>
+              <a target="_blank" href="https://twitter.com/ItsukiNFT" aria-current='page' className='custom-link-button custom-nav-link'>
                 <img src={twitter_logo} />
-              </Link>
+              </a>
               <div style={{ width: '1rem' }} />
             </Nav>
           </BsNavbar.Collapse>
