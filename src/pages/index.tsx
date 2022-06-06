@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Carousel } from 'react-bootstrap';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -77,6 +77,41 @@ const faq_lists = [
 
 
 const ItuskiHome = () => {
+    const [loadText1, setLoadText1] = useState<Boolean>(false);
+
+    const animSliderHandler = () => {
+        const animBoxLeft = document.querySelectorAll(".slideanim-left") as NodeListOf<HTMLElement>; 
+        animBoxLeft.forEach(function(obj){
+          var pos = obj.offsetTop ;        
+          var winTop = window.scrollY;
+          if (pos < winTop + window.innerHeight-100) {
+            setLoadText1(true);
+            obj.classList.add("slide-ltr");            
+            console.log("LoadText: Call : ", loadText1)
+          }
+        });
+        const animBoxRight = document.querySelectorAll(".slideanim-right") as NodeListOf<HTMLElement>; 
+        animBoxRight.forEach(function(obj){
+            var pos = obj.offsetTop ;        
+            var winTop = window.scrollY;
+            if (pos < winTop + window.innerHeight-100) {
+                console.log("loadText: ", loadText1)
+                if(loadText1){
+                    obj.classList.add("slide-rtl");            
+                } else {
+                    setTimeout( () => {
+                        obj.classList.add("slide-rtl");            
+                    }, 500);
+                }
+            }
+        });
+    }
+
+    useEffect(() => {
+        window.onscroll = animSliderHandler;
+        animSliderHandler();
+    }, []);
+
     return (
         <>
             <div className='d-flex justify-content-center align-items-center'>
@@ -89,7 +124,7 @@ const ItuskiHome = () => {
 
             <div className='home-second-section'>
                 <Row className='align-items-center' style={{ marginTop: '60px' }}>
-                    <Col sm='6'>
+                    <Col sm='6' className='slideanim-left'>
                         <div className='d-flex flex-column description-padding'>
                             <span className='home-description-title'>
                                 Rezzsha was the first Itsuki whose birth was a surprise.
@@ -100,7 +135,7 @@ const ItuskiHome = () => {
                             </span>
                         </div>
                     </Col>
-                    <Col sm='6'>
+                    <Col sm='6' className='slideanim-right'>
                         <LazyLoadImage alt='rezzsha' src={rezzsha_src} width={'100%'} effect="blur" delayTime={300}/>
                     </Col>
                 </Row>
@@ -186,7 +221,7 @@ const ItuskiHome = () => {
                             </div>
                         </Carousel.Item>
                        
-                        <Carousel.Item>
+                        <Carousel.Item interval={1000}>
                             <div className='d-flex justify-content-center'>
                                 <div className='w-75'>
                                     <div className='slider-section'>
