@@ -77,31 +77,29 @@ const faq_lists = [
 
 
 const ItuskiHome = () => {
-    const [loadText1, setLoadText1] = useState<Boolean>(false);
 
     const animSliderHandler = () => {
         const animBoxLeft = document.querySelectorAll(".slideanim-left") as NodeListOf<HTMLElement>; 
         animBoxLeft.forEach(function(obj){
           var pos = obj.offsetTop ;        
           var winTop = window.scrollY;
-          if (pos < winTop + window.innerHeight-100) {
-            setLoadText1(true);
+          if (pos < winTop + window.innerHeight) {
             obj.classList.add("slide-ltr");            
-            console.log("LoadText: Call : ", loadText1)
+            console.log("LoadText: Call : ")
           }
         });
         const animBoxRight = document.querySelectorAll(".slideanim-right") as NodeListOf<HTMLElement>; 
         animBoxRight.forEach(function(obj){
-            var pos = obj.offsetTop ;        
+            var pos = obj.offsetTop ; 
             var winTop = window.scrollY;
-            if (pos < winTop + window.innerHeight-100) {
-                console.log("loadText: ", loadText1)
-                if(loadText1){
+            if (pos < winTop + window.innerHeight) {
+                console.log("loadText: ")
+                if(window.innerWidth<576){
                     obj.classList.add("slide-rtl");            
                 } else {
                     setTimeout( () => {
                         obj.classList.add("slide-rtl");            
-                    }, 500);
+                    }, 1000);
                 }
             }
         });

@@ -337,6 +337,7 @@
 
 .slider-section {
     background-image: url("../assets/img/itsuki-branches.png");
+    background-color: black;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -701,8 +702,8 @@
 .slide-ltr {
   animation-name: slide-ltr;
   -webkit-animation-name: slide-ltr;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
   visibility: visible;
 }
 @keyframes slide-rtl {
