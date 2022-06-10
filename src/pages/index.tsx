@@ -279,86 +279,86 @@ const ItuskiHome = () => {
                     <div className='home-container home-sub-title-margin-top '>
                         <Row style={{ rowGap: '30px' }}>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={vish} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Vishnft.eth</p>
-                                        <p className='title'>Founder</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Founder</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={leaf} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Leafswan.eth</p>
-                                        <p className='title'>Co-Founder</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Co-Founder</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={derrick} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Derrick</p>
-                                        <p className='title'>Lead Artist</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Lead Artist</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={shanu} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Shanu.eth</p>
-                                        <p className='title'>Smart Contract Developer</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Smart Contract Developer</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={poli} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Yan</p>
-                                        <p className='title'>Artist</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Artist</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={duo} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>DuoCrypto.eth</p>
-                                        <p className='title'>Advisor</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Advisor</p>
                                     </div>
                                 </div>
                             </Col>
                             <Col sm='6' md='4' lg='3'>
-                                <div className='team-member-card'>
+                                <div className='team-member-card' style={{boxShadow:"3px 3px 7px 0"}}>
                                     <div style={{ background: '#D9D9D9' }}>
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={maheen} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
                                     <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Maheen</p>
-                                        <p className='title'>Community Manager</p>
+                                        <p className='title' style={{paddingBottom : '15px'}}>Community Manager</p>
                                     </div>
                                 </div>
                             </Col>
