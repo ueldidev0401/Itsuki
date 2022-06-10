@@ -284,7 +284,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={vish} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Vishnft.eth</p>
                                         <p className='title'>Founder</p>
                                     </div>
@@ -296,7 +296,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={leaf} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Leafswan.eth</p>
                                         <p className='title'>Co-Founder</p>
                                     </div>
@@ -308,7 +308,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={derrick} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Derrick</p>
                                         <p className='title'>Lead Artist</p>
                                     </div>
@@ -320,7 +320,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={shanu} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Shanu.eth</p>
                                         <p className='title'>Smart Contract Developer</p>
                                     </div>
@@ -332,7 +332,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={poli} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Yan</p>
                                         <p className='title'>Artist</p>
                                     </div>
@@ -344,7 +344,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={duo} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>DuoCrypto.eth</p>
                                         <p className='title'>Advisor</p>
                                     </div>
@@ -356,7 +356,7 @@ const ItuskiHome = () => {
                                         {/* <img src={team_src} style={{width:'100%', objectFit: 'cover'}}/> */}
                                         <LazyLoadImage alt='team' src={maheen} width={'100%'} effect="blur" delayTime={300}/>
                                     </div>
-                                    <div style={{ background: '#0E0B26', border: '1px solid gray', textAlign:'center'}}>
+                                    <div style={{ background: '#0E0B26', textAlign:'center'}}>
                                         <p className='description'>Maheen</p>
                                         <p className='title'>Community Manager</p>
                                     </div>
